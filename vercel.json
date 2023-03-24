@@ -16,7 +16,7 @@
       "src": "/(.*)",
       "dest": "/index.html",
       "headers": {
-        "Access-Control-Allow-Origin": "https://seu-front.vercel.app",
+        "Access-Control-Allow-Origin": "https://devtub.vercel.app/",
         "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE",
         "Access-Control-Allow-Headers": "Content-Type"
       }
