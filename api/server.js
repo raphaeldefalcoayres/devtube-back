@@ -4,16 +4,7 @@ const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
 
-// Add CORS headers to middleware
-middlewares.push((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "https://devtub.vercel.app");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-  next();
-});
-
 server.use(middlewares);
-
 // Add this before server.use(router)
 server.use(
   jsonServer.rewriter({
